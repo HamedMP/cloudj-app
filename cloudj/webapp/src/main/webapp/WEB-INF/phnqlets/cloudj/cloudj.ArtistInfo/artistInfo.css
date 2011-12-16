@@ -1,0 +1,68 @@
+._TYPE_
+{
+    display: block;
+    position: relative;
+}
+
+._TYPE_ > img
+{
+    width: 100%;
+}
+
+._TYPE_ > img.blue
+{
+    position: absolute;
+    opacity: 0;
+}
+
+._TYPE_ > img.blue
+{
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    transition-property: opacity;
+}
+
+._TYPE_ > h1
+{
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+._TYPE_ > p
+{
+    padding: 5px;
+    color: #ddd;
+    font-size: 13px;
+}
+
+._TYPE_ p a
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+._TYPE_ p a:hover
+{
+    text-decoration: underline;
+}
+
+
+._TYPE_ p.progText
+{
+    color: #bbb;
+    text-align: center;
+    position: relative;
+    top: -30px;
+    font-size: 16px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    transition-property: color;
+}

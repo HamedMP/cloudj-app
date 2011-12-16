@@ -1,0 +1,68 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
+{
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body
+{
+    background: #eee;
+}
+
+._TYPE_
+{
+    font-family: sans-serif;
+}
+
+._TYPE_ header
+{
+    position: fixed;
+    height: 49px;
+    width: 100%;
+    z-index: 99;
+}
+
+._TYPE_ nav
+{
+    margin-top: 50px;
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    z-index: 99;
+}
+
+._TYPE_ section.content
+{
+    padding-left: 250px;
+    padding-top: 50px;
+    height: 100%;
+}
+
+._TYPE_ input[type=button]
+{
+    background: #aaa;
+    color: #fff;
+    border: #999 solid 1px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 12px;
+    margin: 2px 5px;
+}
+
+._TYPE_ input[type=button]:hover
+{
+    background: #3974c5;
+}
+
+._TYPE_ input[type=button]:active
+{
+    background: #ccc;
+    color: #666;
+    border: #fff solid 1px;
+}
+
+

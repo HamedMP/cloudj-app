@@ -1,0 +1,65 @@
+._TYPE_
+{
+    padding: 9px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+._TYPE_:hover
+{
+    -webkit-transition-property: border-color, background-color !important;
+    -moz-transition-property: border-color, background-color !important;
+    transition-property: border-color, background-color !important;
+    -webkit-transition-duration: 0.4s !important;
+    -moz-transition-duration: 0.4s !important;
+    transition-duration: 0.4s !important;
+    border-color: #3974c5;
+    background-color: #ccc;
+
+}
+
+._TYPE_:hover h2
+{
+    color: #666;
+}
+
+._TYPE_ img
+{
+    width: 126px;
+    height: 126px;
+    -moz-box-shadow: 0px 3px 4px #666;
+    -webkit-box-shadow: 0px 3px 4px #666;
+    box-shadow: 0px 3px 4px #666;
+}
+
+._TYPE_ h1, ._TYPE_ h2
+{
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+    margin: 0;
+    width: 126px;
+    height: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -icab-text-overflow: ellipsis;
+    -khtml-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+}
+
+._TYPE_ h1
+{
+    font-weight: bold;
+}
+
+._TYPE_ h2
+{
+    color: #999;
+}

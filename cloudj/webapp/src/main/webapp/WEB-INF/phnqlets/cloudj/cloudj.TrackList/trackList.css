@@ -1,0 +1,85 @@
+._TYPE_
+{
+    display: block;
+}
+
+.emptyTrackList ._TYPE_
+{
+    display: none;
+}
+
+._TYPE_ .tracks
+{
+    background: #eee;
+}
+
+
+._TYPE_ hgroup
+{
+    background: #ccc;
+}
+
+._TYPE_ .tracksStaging
+{
+    display: none;
+}
+
+._TYPE_ .isotope, ._TYPE_ .isotope .isotope-item
+{
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+._TYPE_ .isotope
+{
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+
+._TYPE_ .isotope .isotope-item
+{
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+._TYPE_ .isotope.no-transition, ._TYPE_ .isotope.no-transition .isotope-item, ._TYPE_ .isotope .isotope-item.no-transition
+{
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+._TYPE_ > hgroup
+{
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 90;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: #fff 1px solid;
+    color: #555;
+    font-size: 14px;
+    min-width: 850px;
+}
+
+._TYPE_ .tools
+{
+    float: right;
+    margin-right: 300px;
+}
+
+._TYPE_ > .tracks
+{
+    position: relative;
+    top: 60px;
+}
+
+._TYPE_.empty .disableOnEmpty
+{
+    display: none;
+}

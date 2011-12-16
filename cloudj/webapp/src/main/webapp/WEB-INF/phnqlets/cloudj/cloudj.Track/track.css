@@ -1,0 +1,96 @@
+._TYPE_
+{
+    margin: 20px 5px 0 20px;
+    width: 174px;
+    height: 215px;
+}
+
+._TYPE_.unableToPlay .trackImage
+{
+    opacity: 0.2;
+}
+
+._TYPE_ .trackImageWrapper
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 174px;
+    height: 174px;
+    display: block;
+}
+
+._TYPE_ .trackImage
+{
+    position: absolute;
+    width: 174px;
+    height: 174px;
+    -moz-box-shadow: 0px 3px 4px #666;
+    -webkit-box-shadow: 0px 3px 4px #666;
+    box-shadow: 0px 3px 4px #666;
+}
+
+._TYPE_ .statusImage
+{
+    position: absolute;
+    opacity: 0;
+    width: 174px;
+    height: 174px;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+._TYPE_.playable .statusImage
+{
+    opacity: 1;
+    background: url(static/play.png);
+}
+
+._TYPE_.buffering .statusImage
+{
+    opacity: 1;
+    background: url(static/buffering.png);
+}
+
+._TYPE_.playing .statusImage
+{
+    opacity: 1;
+    background: url(static/playing.png);
+}
+
+._TYPE_.playable.playing .statusImage
+{
+    opacity: 1;
+    background: url(static/stop.png);
+}
+
+._TYPE_.unableToPlay .statusImage
+{
+    opacity: 1;
+    background: url(static/unavailable.png);
+}
+
+._TYPE_ > h1
+{
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    color: #555;
+}
+
+._TYPE_ > h2
+{
+    margin: 0;
+    font-size: 13px;
+    color: #999;
+}
+
+._TYPE_.loading .trackImage
+{
+    opacity: 0.5;
+}
+
+._TYPE_.unavailable .trackImage
+{
+    opacity: 0.2;
+}

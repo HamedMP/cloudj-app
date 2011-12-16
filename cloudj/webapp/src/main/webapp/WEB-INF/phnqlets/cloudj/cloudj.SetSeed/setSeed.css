@@ -1,0 +1,126 @@
+._TYPE_
+{
+    display: none;
+    text-align: center;
+    margin-top: 100px;
+    color: #666;
+    min-width: 600px;
+}
+
+.emptyTrackList ._TYPE_
+{
+    display: block;
+}
+
+._TYPE_ h1
+{
+    color: #3974c5;
+    width: 530px;
+    margin: auto;
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+._TYPE_ strong
+{
+    font-weight: bold;
+    color: #777;
+}
+
+._TYPE_ > p
+{
+    width: 530px;
+    margin: auto;
+    color: #999;
+    font-size: 16px;
+    margin-bottom: 50px;
+    text-align: left;
+    line-height: 30px;
+}
+
+
+._TYPE_ form
+{
+    display: block;
+}
+
+._TYPE_ .queryField
+{
+    width: 500px;
+    border: solid 1px #999;
+    color: #333;
+    font-size: 16px;
+    padding: 5px;
+    padding-left: 30px;
+    background: url(static/search.png) #fff no-repeat left center;
+    margin-bottom: 10px;
+}
+
+._TYPE_ .errorMsg
+{
+    width: 530px;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+    color: #900;
+    margin-top: 50px;
+}
+
+._TYPE_ .results
+{
+    width: 600px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+._TYPE_ .resultsStaging
+{
+    display: none;
+}
+
+._TYPE_ .isotope, ._TYPE_ .isotope .isotope-item
+{
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+._TYPE_ .isotope
+{
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+
+._TYPE_ .isotope .isotope-item
+{
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+._TYPE_ .isotope.no-transition, ._TYPE_ .isotope.no-transition .isotope-item, ._TYPE_ .isotope .isotope-item.no-transition
+{
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.acItem
+{
+    font-size: 12px;
+    color: #666;
+}
+
+.acItem em
+{
+    font-size: 10px;
+    font-weight: bold;
+    color: #999;
+}
+
+._TYPE_.progress input
+{
+    opacity: 0.2;
+}

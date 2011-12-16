@@ -1,0 +1,9 @@
+<html xmlns:jsp="http://java.sun.com/JSP/Page">
+    <jsp:directive.page contentType="text/html" pageEncoding="UTF-8"/>
+    <head>
+        <title>ClouDJ</title>
+        <meta http-equiv="refresh" content="0;url=phnqlets/cloudj.Main"></meta>    
+    </head>
+    <body>
+    </body>
+</html>
