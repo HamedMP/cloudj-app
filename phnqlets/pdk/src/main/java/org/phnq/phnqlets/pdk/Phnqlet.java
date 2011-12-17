@@ -246,7 +246,7 @@ public class Phnqlet {
     private String fileToString(File f, boolean isCss) {
         StringBuilder sb = new StringBuilder();
         try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f)));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
             String line;
             while ((line = reader.readLine()) != null) {
                 sb.append(line.replaceAll("_TYPE_", isCss ? type.replace(".", "\\\\.") : type)).append("\n");
