@@ -32,7 +32,7 @@ var phnqlet =
     {
         if(!this.rdio)
         {
-            log.debug("Player not ready yet.");
+            log.debug("Player not ready yet (play).");
             return;
         }
         
@@ -70,7 +70,7 @@ var phnqlet =
     {
         if(!this.rdio)
         {
-            log.debug("Player not ready yet.");
+            log.debug("Player not ready yet (pause).");
             return;
         }
         this.rdio.rdio_pause();
@@ -80,7 +80,7 @@ var phnqlet =
     {
         if(!this.rdio)
         {
-            log.debug("Player not ready yet.");
+            log.debug("Player not ready yet (stop).");
             return;
         }
 
@@ -93,7 +93,7 @@ var phnqlet =
     {
         if(!this.rdio)
         {
-            log.debug("Player not ready yet.");
+            log.debug("Player not ready yet (queue).");
             return;
         }
         
@@ -208,9 +208,16 @@ var phnqlet =
             {
                 'allowScriptAccess': 'always'
             };
-
-            swfobject.embedSWF("http://www.rdio.com/api/swf/", objId, 1, 1, "9.0.0", "expressInstall.swf", flashVars, params, {}, function(obj)
+            
+            var expressInstallUrl = phnq.serverContextBase + "/phnqlets/_TYPE_/static/expressInstall.swf";
+            log.debug("expressInstallUrl: ", expressInstallUrl);
+            swfobject.embedSWF("http://www.rdio.com/api/swf/", objId, 1, 1, "9.0.0", expressInstallUrl, flashVars, params, {}, function(obj)
             {
+                if(!obj.success)
+                {
+                    $$().addClass("noflash");
+                    alert("To play music, you'll need to install Flash.");
+                }
             });
         });
     }

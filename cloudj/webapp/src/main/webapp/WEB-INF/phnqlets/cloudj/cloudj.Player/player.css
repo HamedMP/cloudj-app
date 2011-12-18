@@ -1,0 +1,14 @@
+._TYPE_ .playerWrapper
+{
+    text-align: center;
+}
+
+._TYPE_ .playerWrapper > a
+{
+    display: none;
+}
+
+._TYPE_.noflash .playerWrapper > a
+{
+    display: inline;
+}
