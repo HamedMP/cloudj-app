@@ -11,4 +11,12 @@
 ._TYPE_.noflash .playerWrapper > a
 {
     display: inline;
+    text-decoration: none;
+}
+
+._TYPE_ .playerWrapper p
+{
+    color: #900;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
