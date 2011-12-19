@@ -88,44 +88,44 @@ public class MainTest extends TestCase {
         driver.quit();
     }
     
-    public void testMakePlaylistAndPlayTrack()
-    {
-        final WebDriver driver = new FirefoxDriver();
-        driver.get(BASE_URL+"/phnqlets/cloudj.Main");
-
-        WebElement addRandomButton = driver.findElement(By.className("addRandomButton"));
-        addRandomButton.click();
-        
-        (new WebDriverWait(driver, 60)).until(new ExpectedCondition<Boolean>() {
-
-            public Boolean apply(WebDriver d) {
-                WebElement artistInfoElmnt = driver.findElements(By.className("cloudj.ArtistInfo")).get(0);
-                return artistInfoElmnt.getAttribute("class").indexOf("progress") == -1;
-            }
-        });
-        
-        final List<WebElement> trackElmnts = driver.findElements(By.className("cloudj.Track"));
-        assertTrue("At least 10 tracks", trackElmnts.size() >= 10);
-
-        WebElement firstTrackElmnt = trackElmnts.get(0);
-        firstTrackElmnt.click();
-        
-        trackElmnts.remove(0);
-
-        (new WebDriverWait(driver, 60)).until(new ExpectedCondition<Boolean>() {
-
-            public Boolean apply(WebDriver d) {
-                for(WebElement trackElmnt : trackElmnts)
-                {
-                    if(trackElmnt.getAttribute("class").indexOf("playing") != -1)
-                        return true;
-                }
-                return false;
-            }
-        });
-        
-        driver.quit();
-    }
+//    public void testMakePlaylistAndPlayTrack()
+//    {
+//        final WebDriver driver = new FirefoxDriver();
+//        driver.get(BASE_URL+"/phnqlets/cloudj.Main");
+//
+//        WebElement addRandomButton = driver.findElement(By.className("addRandomButton"));
+//        addRandomButton.click();
+//        
+//        (new WebDriverWait(driver, 60)).until(new ExpectedCondition<Boolean>() {
+//
+//            public Boolean apply(WebDriver d) {
+//                WebElement artistInfoElmnt = driver.findElements(By.className("cloudj.ArtistInfo")).get(0);
+//                return artistInfoElmnt.getAttribute("class").indexOf("progress") == -1;
+//            }
+//        });
+//        
+//        final List<WebElement> trackElmnts = driver.findElements(By.className("cloudj.Track"));
+//        assertTrue("At least 10 tracks", trackElmnts.size() >= 10);
+//
+//        WebElement firstTrackElmnt = trackElmnts.get(0);
+//        firstTrackElmnt.click();
+//        
+//        trackElmnts.remove(0);
+//
+//        (new WebDriverWait(driver, 60)).until(new ExpectedCondition<Boolean>() {
+//
+//            public Boolean apply(WebDriver d) {
+//                for(WebElement trackElmnt : trackElmnts)
+//                {
+//                    if(trackElmnt.getAttribute("class").indexOf("playing") != -1)
+//                        return true;
+//                }
+//                return false;
+//            }
+//        });
+//        
+//        driver.quit();
+//    }
     
     public void testSearchNoResults() {
         final WebDriver driver = new FirefoxDriver();
