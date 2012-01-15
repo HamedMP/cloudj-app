@@ -25,7 +25,8 @@
     </logger>
 
     <logger name="org.phnq" level="debug" additivity="false">
-        <appender-ref ref="phnqLog" />
+<!--        <appender-ref ref="phnqLog" />-->
+        <appender-ref ref="stdOut" />
     </logger>
 
     <root level="WARN">
