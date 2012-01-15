@@ -42,12 +42,6 @@
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
-            <artifactId>jsp-api</artifactId>
-            <scope>provided</scope>
-            <version>2.0</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <scope>provided</scope>
             <version>1.2</version>
